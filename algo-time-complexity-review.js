@@ -187,7 +187,7 @@ function findColor(quadTree, coordinates){
 
 
 /////////// Bonus! ///////////
-/////////// time complexity: 
+/////////// time complexity: Linear
 //this will require some math to determine 
 
 function tournamentRedux(players){
@@ -202,7 +202,7 @@ function tournamentRedux(players){
       //the player in the room holding the potato is the winner
       //and gets returned from the function 
     }
-    return tournament(results);
+    return tournamentRedux(results);
   }
 }
 
